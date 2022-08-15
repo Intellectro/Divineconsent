@@ -1,0 +1,71 @@
+@media screen and (max-width: 1200px) {
+    #header{
+        position: relative;
+        z-index: 999;
+        background-color: white;
+    }
+    .dci-team-container{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .dci-team-container::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        inset: 0;
+    }
+    .video-container{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        inset: 0;
+    }
+    .dci-center-flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .dci-team-container{
+        width: 100%;
+    }
+    .dci-short-text{
+        width: 80%;
+    }
+    .dci-center-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dci-card-box{
+        width: 390px;
+        height: 430px;
+        position: relative;
+    }
+    .dci-card-box img{
+        width: 100%;
+        height: 70%;
+    }
+    .dci-card-box img:nth-child(2){
+        object-position: left -22px;
+    }
+    .cogs-box{
+        display: none;
+    }
+}
+
+@media screen and (max-width:468px){
+    .dci-team-container{
+        width: 100%;
+    }
+    .dci-card-box{
+        width: 90%;
+    }
+    .dci-short-text span{
+        font-size: 13px;
+        font-family: 'Anek Latin', sans-serif;
+    }
+}
